@@ -1,1 +1,0 @@
-# hack_vk_che
