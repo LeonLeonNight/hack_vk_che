@@ -19,12 +19,12 @@ const App = () => {
 			}
 		});
 
-		async function fetchData() {
-			const user = await bridge.send('VKWebAppGetUserInfo');
-			setUser(user);
-			setPopout(null);
-		}
-		fetchData();
+		// async function fetchData() {
+		// 	const user = await bridge.send('VKWebAppGetUserInfo');
+		// 	setUser(user);
+		// 	setPopout(null);
+		// }
+		// fetchData();
 	}, []);
 
 	const go = e => {
@@ -38,7 +38,7 @@ const App = () => {
 					<SplitLayout popout={popout}>
 						<SplitCol>
 							<View activePanel={activePanel}>
-								<Home id='home' fetchedUser={fetchedUser} go={go} />
+								<Home id='home' />
 								<Persik id='persik' go={go} />
 							</View>
 						</SplitCol>
