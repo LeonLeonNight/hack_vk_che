@@ -36,11 +36,11 @@ const Home = ({ id, go, fetchedUser }) => (
 		<Group>
 			<Div style={rowStyles}>	
 				<ButtonGroup mode="horizontal">	
-						<IconButton style={captionStyles} onClick={go} data-to="searchTournier">
+						<IconButton style={captionStyles} >
 							<Icon28GameOutline style={captionStyles} />
 							<Text>Турниры</Text> 
 						</IconButton>
-						<IconButton style={captionStyles} onClick={go} data-to="notifications">
+						<IconButton style={captionStyles} > 
 							<Icon28Notifications style={captionStyles} />							
 							<Text>Уведомления</Text> 
 						</IconButton>						
